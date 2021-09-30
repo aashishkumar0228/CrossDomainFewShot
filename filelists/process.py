@@ -13,7 +13,7 @@ os.chdir(os.path.join(dataset, 'source'))
 
 # download files
 if dataset == 'cars':
-  call('wget http://imagenet.stanford.edu/internal/car196/cars_train.tgz', shell=True)
+  call('wget http://ai.stanford.edu/~jkrause/car196/cars_train.tgz', shell=True)
   call('tar -zxf cars_train.tgz', shell=True)
   call('wget https://ai.stanford.edu/~jkrause/cars/car_devkit.tgz', shell=True)
   call('tar -zxf car_devkit.tgz', shell=True)
