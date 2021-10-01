@@ -67,7 +67,7 @@ if __name__=='__main__':
   print('\n--- prepare dataloader ---')
   if params.dataset == 'multi':
     print('  train with multiple seen domains (unseen domain: {})'.format(params.testset))
-    datasets = ['miniImagenet', 'cars', 'places', 'cub', 'plantae']
+    datasets = ['miniImagenet', 'cars', 'cub']
     datasets.remove(params.testset)
     base_file = [os.path.join(params.data_dir, dataset, 'base.json') for dataset in datasets]
     val_file  = os.path.join(params.data_dir, 'miniImagenet', 'val.json')
